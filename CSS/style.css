@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 45%;
+    background-color: whitesmoke;
+    border: solid white;
+    border-radius: 10px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background: brown;
+    height: 60px;
+    justify-items: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 50%;
+    height: 60px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style:none ;
+    font-family: 'Monteserrat', sans-serif;
+    font-weight: 500;
+    padding: 0; 
+    margin: 0;
+    margin-right: 30px;
+}
+.text-big{
+    font-size: 41px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+.text-small{
+    font-size: 18px;;
+    text-align: right;
+    font-family: 'Dancing Script', cursive;
+    word-spacing: 3px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.nav-list li a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: block;
+    line-height: 60px;
+    padding: 0 15px;
+    color: wheat;
+    transition: .5s;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    letter-spacing: 3px;
+    background-color: #fff;
+    color: rgb(27, 142, 250);
+}
+.nav-list li ul{
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    top: 60px;
+    background: gray;
+    display: none;
+}
+
+.nav-list li ul a{
+    color: white;
+}
+.nav-list li:hover > ul{
+    display: block;
+}
+.nav-list li ul li{
+    width: 150px;
+    float: none;
+    position: relative;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    height: 78%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    margin: auto;
+    max-width: 50%;
+
+
+}
+.firstSection{
+    height: 80vh;
+}
+.first-half{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+
+
+.second-half{
+    width: 30%;
+}
+.second-half img{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+.buttons{
+    height: 50px;
+    margin: 20px;
+
+}
+
+.buttons .btn{
+    
+    top: 0;
+    left: 0;
+    width: 70%;
+    display: flex;
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "FontMedium" , sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.buttons .btn:hover{
+    letter-spacing: 2px;
+    
+}
+
+
+.fhalfSection{
+    clear: both;
+   float: left;
+}
+.myUl {
+    font-size: 18px;
+    
+    list-style-type: none;
+    font-family: "MyWebFont",sans-serif;
+    margin-left: 40px;
+    margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+.myUl :hover{
+    font-weight: 400;
+    font-family: "FontMedium" ,sans-serif;
+}
+.contentS{
+  margin-left: 40px;
+  margin: 3%;
+    margin-top: 15px;
+}
+
+.fhalfSection li{
+    margin-bottom: 10px;
+    float: left;
+    background: gray;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    letter-spacing: 1px;
+    transition: .5s;  
+}
+.fhalfSection li:hover{
+    word-spacing: 3px;
+    background: #4888f4;
+    width: 150px;
+    letter-spacing: 3px;
+}
+
+.fhalfSection li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+@font-face {
+    font-family: "MyWebFont";
+    src:  url('fonts/light.ttf'); 
+  }
+  @font-face {
+    font-family: "FontMedium";
+    src:  url('fonts/medium.otf'); 
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src:  url('fonts/Montserrat.ttf'); 
+  }
+
+  @font-face {
+    font-family: "Dosis";
+    src:  url('fonts/Dosis.ttf'); 
+  }
